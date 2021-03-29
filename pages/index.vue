@@ -1,30 +1,24 @@
 <template>
-  <div class="container">
+  <b-container class="main-page">
     <div>
       <Logo />
       <h1 class="title">
         firstNuxtApp
       </h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+        <div>
+          <h1>Home page</h1>
+          <NuxtLink to="/home">
+            Home (internal link that belongs to the Nuxt App)
+          </NuxtLink>
+          <a
+            href="https://nuxtjs.org"
+            target="_blank"
+          >External Link to another page</a>
+        </div>
       </div>
     </div>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -32,7 +26,7 @@ export default {}
 </script>
 
 <style>
-.container {
+.main-page {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -42,8 +36,7 @@ export default {}
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
