@@ -1,4 +1,4 @@
-# my-firstNuxtApp
+# firstNuxtApp
 
 ## Build Setup
 
